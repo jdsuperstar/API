@@ -1,23 +1,18 @@
 package entities;
 
+import lombok.Data;
+
+import java.util.List;
+
+@Data
 public class RequestBody {
-    private String email;
+    private String company_name;
     private String password;
+    private String seller_name;
+    private String email;
+    private String phone_number;
+    private String address;
+    List<CustomResponse>responses;
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
 }
